@@ -1,0 +1,263 @@
+.leaderboard {
+  background: #0a0a0f;
+  color: white;
+  min-height: 100vh;
+  padding-top: 90px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.leaderboard-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.lb-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-size: 2.2rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #00ff88, #00ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-btn {
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #aaa;
+  transition: all 0.3s;
+}
+
+.nav-btn.active,
+.nav-btn:hover {
+  background: #00ff88;
+  color: #0a0a0f;
+}
+
+
+.lb-title {
+  font-size: 3.8rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -2px;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #00ff88, #00ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.tab-btn {
+  background: rgba(255,255,255,0.05);
+  border: none;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  color: #aaa;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab-btn.active {
+  background: #00ff88;
+  color: #0a0a0f;
+  box-shadow: 0 10px 30px rgba(0, 255, 136, 0.4);
+}
+
+
+.search-bar {
+  max-width: 420px;
+  margin: 0 auto 50px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 16px 24px;
+  background: #111118;
+  border: 2px solid rgba(0, 255, 136, 0.2);
+  border-radius: 50px;
+  color: white;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.search-bar input:focus {
+  border-color: #00ff88;
+  box-shadow: 0 0 0 4px rgba(0, 255, 136, 0.15);
+}
+
+
+.podium {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.podium-card {
+  background: #111118;
+  border-radius: 24px;
+  padding: 30px 24px;
+  text-align: center;
+  width: 220px;
+  transition: all 0.4s;
+  position: relative;
+  border: 2px solid rgba(255,255,255,0.08);
+}
+
+.podium-card:hover {
+  transform: translateY(-12px);
+  border-color: #00ff88;
+}
+
+.podium-card.rank-1 { border-color: #ffd700; box-shadow: 0 20px 50px rgba(255, 215, 0, 0.3); }
+.podium-card.rank-2 { border-color: #c0c0c0; box-shadow: 0 20px 50px rgba(192, 192, 192, 0.2); }
+.podium-card.rank-3 { border-color: #cd7f32; box-shadow: 0 20px 50px rgba(205, 127, 50, 0.2); }
+
+.crown {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.flag {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+
+.podium-wpm {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #00ff88;
+}
+
+.podium-wpm span {
+  font-size: 1.1rem;
+  color: #777;
+  display: block;
+  margin-top: 4px;
+}
+
+.podium-acc {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+
+.table-container {
+  background: #111118;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 255, 136, 0.15);
+}
+
+.leader-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leader-table th {
+  background: rgba(0, 255, 136, 0.08);
+  padding: 22px 20px;
+  text-align: left;
+  font-weight: 600;
+  color: #00ff88;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+.leader-table td {
+  padding: 22px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.leader-table tr:hover {
+  background: rgba(0, 255, 136, 0.08);
+}
+
+.rank {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #00ff88;
+}
+
+.user {
+  font-weight: 700;
+}
+
+.flag {
+  margin-right: 12px;
+  font-size: 1.5rem;
+}
+
+.wpm {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #00ff88;
+}
+
+.acc {
+  color: #fff;
+  font-weight: 700;
+}
+
+.tests {
+  color: #888;
+}
+
+.country {
+  font-size: 1.8rem;
+}
+
+
+.lb-footer {
+  text-align: center;
+  margin-top: 60px;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .podium {
+    gap: 15px;
+  }
+  .podium-card {
+    width: 100%;
+    max-width: 280px;
+  }
+  .lb-title {
+    font-size: 2.8rem;
+  }
+}
