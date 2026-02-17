@@ -3,6 +3,9 @@ import Nav from './Components/Nav';
 import Home from './Pages/Home';
 import Test from './Pages/Test';
 import Leaderboard from './Pages/Leaderboard';
+import Profile from './Pages/Profile';
+import Signup from './Pages/Signup';
+import Login from './Pages/Login';
 
 
 function App() {
@@ -14,6 +17,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/test" element={<Test />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/Signup" element={<Signup />} />
+        <Route path="/Login" element={<Login />} />
       </Routes>
     </Router>
   );

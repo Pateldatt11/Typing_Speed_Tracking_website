@@ -19,7 +19,7 @@ const Leaderboard = () => {
   const [activeTab, setActiveTab] = useState('all');
   const [search, setSearch] = useState('');
 
-  const data = activeTab === 'all' ? allTime : allTime.slice(0, 8); // demo ke liye
+  const data = activeTab === 'all' ? allTime : allTime.slice(0, 8); 
 
   const filtered = data.filter(item =>
     item.username.toLowerCase().includes(search.toLowerCase())
